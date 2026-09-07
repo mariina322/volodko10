@@ -1,0 +1,128 @@
+
+> computer-graphics-lab1-variant6-10a@1.0.0 test
+> node --test tests/color-model.test.js
+
+TAP version 13
+# Subtest: RGB red converts to HLS(0, 50, 100)
+ok 1 - RGB red converts to HLS(0, 50, 100)
+  ---
+  duration_ms: 2.749871
+  type: 'test'
+  ...
+# Subtest: RGB red converts to CMYK(0, 100, 100, 0)
+ok 2 - RGB red converts to CMYK(0, 100, 100, 0)
+  ---
+  duration_ms: 0.431723
+  type: 'test'
+  ...
+# Subtest: HLS red converts back to RGB red
+ok 3 - HLS red converts back to RGB red
+  ---
+  duration_ms: 0.548145
+  type: 'test'
+  ...
+# Subtest: RGB-HLS-RGB roundtrip for representative colors
+ok 4 - RGB-HLS-RGB roundtrip for representative colors
+  ---
+  duration_ms: 0.504784
+  type: 'test'
+  ...
+# Subtest: CMYK-RGB formula matches the supplied RGB-CMYK relation
+ok 5 - CMYK-RGB formula matches the supplied RGB-CMYK relation
+  ---
+  duration_ms: 0.421582
+  type: 'test'
+  ...
+# Subtest: CMYK entered by the user remains the source representation
+ok 6 - CMYK entered by the user remains the source representation
+  ---
+  duration_ms: 0.453129
+  type: 'test'
+  ...
+# Subtest: GCR separation is reversible
+ok 7 - GCR separation is reversible
+  ---
+  duration_ms: 0.393731
+  type: 'test'
+  ...
+# Subtest: UCR separation is reversible
+ok 8 - UCR separation is reversible
+  ---
+  duration_ms: 0.182462
+  type: 'test'
+  ...
+# Subtest: GCR and UCR produce different black separation in shadows
+ok 9 - GCR and UCR produce different black separation in shadows
+  ---
+  duration_ms: 0.762513
+  type: 'test'
+  ...
+# Subtest: UCR does not introduce K below the selected shadow threshold
+ok 10 - UCR does not introduce K below the selected shadow threshold
+  ---
+  duration_ms: 0.686028
+  type: 'test'
+  ...
+# Subtest: black generation strength changes GCR K amount
+ok 11 - black generation strength changes GCR K amount
+  ---
+  duration_ms: 0.330671
+  type: 'test'
+  ...
+# Subtest: Clipping and Scaling are distinct gamut strategies
+ok 12 - Clipping and Scaling are distinct gamut strategies
+  ---
+  duration_ms: 1.33722
+  type: 'test'
+  ...
+# Subtest: out-of-range RGB input is mapped and all models use the mapped RGB
+ok 13 - out-of-range RGB input is mapped and all models use the mapped RGB
+  ---
+  duration_ms: 0.409978
+  type: 'test'
+  ...
+# Subtest: HLS values outside the domain are normalized or clamped
+ok 14 - HLS values outside the domain are normalized or clamped
+  ---
+  duration_ms: 0.327221
+  type: 'test'
+  ...
+# Subtest: CMYK values outside 0..100 are corrected
+ok 15 - CMYK values outside 0..100 are corrected
+  ---
+  duration_ms: 0.22044
+  type: 'test'
+  ...
+# Subtest: palette HEX conversion roundtrip
+ok 16 - palette HEX conversion roundtrip
+  ---
+  duration_ms: 0.36387
+  type: 'test'
+  ...
+# Subtest: D65 RGB-XYZ matrix is calculated dynamically and matches the supplied reference within rounding tolerance
+ok 17 - D65 RGB-XYZ matrix is calculated dynamically and matches the supplied reference within rounding tolerance
+  ---
+  duration_ms: 0.39025
+  type: 'test'
+  ...
+# Subtest: D65, D50 and E produce different RGB-XYZ matrices
+ok 18 - D65, D50 and E produce different RGB-XYZ matrices
+  ---
+  duration_ms: 0.49151
+  type: 'test'
+  ...
+# Subtest: calculated RGB-XYZ and XYZ-RGB matrices are inverses
+ok 19 - calculated RGB-XYZ and XYZ-RGB matrices are inverses
+  ---
+  duration_ms: 0.487081
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 267.961857

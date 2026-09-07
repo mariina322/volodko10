@@ -1,0 +1,10 @@
+{
+  "name": "computer-graphics-lab1-variant6-10a",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/color-model.test.js",
+    "start": "node server.mjs"
+  }
+}
